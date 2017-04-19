@@ -1,0 +1,45 @@
+// .clearfix {
+//     &:after,
+//     &:before {
+//         content: '';
+//         display: block;
+//         clear: both;
+//     }
+// }
+
+
+
+
+
+
+
+@mixin flex($display,$direction){
+	display:$display;
+	flex-direction:$direction;
+}
+
+@mixin box($margin,$border,$border-radius,$padding){
+	margin:$margin;
+	border:$border;
+	border-radius:$border-radius;
+	padding:$padding;
+}
+
+@mixin clearfix {
+    &:after,
+    &:before {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+
+@mixin btn-style ($bg-color, $font-color, $border-color) {
+    background: $bg-color;
+    color: $font-color;
+    border: $border-color;
+}
+
+
+
